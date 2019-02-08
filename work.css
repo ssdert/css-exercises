@@ -1,0 +1,82 @@
+*{
+    font-family: 微軟正黑體;
+    position: relative;
+    
+  }
+
+  body{
+    background-color: #d1d1d1
+  }
+  .namecard{
+    width: 355px; height: 200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+   
+    background-color: #eee;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #666;
+    
+    overflow: hidden;
+    border: solid 1px #42424226;
+    border-radius: 6px;
+    
+    box-shadow: 0px 25px 15px -20px rgba(0,0,0,0.2)
+    
+  }
+  
+  .namecard h2{
+    font-size: 25px;
+  }
+
+  .namecard h5{
+    color: #f24;
+    font-weight: 500;
+  }
+  
+  .namecard p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  
+  .circle{
+    width: 100px; height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    
+  }
+  
+  .circle1{
+    right: 100px;
+    background-color: #f24;
+    bottom: -70px
+  }
+
+  .circle2{
+    width: 60px; height: 60px; 
+    right: -30px;
+    top: -30px;
+    border: solid 3px #f24
+  }
+
+  .circle3{
+    width: 20px; height: 20px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #f24;
+  }
+
+  .circle4{
+    width: 30px; height: 30px; 
+    right: 60px;
+    top: 60px;
+    border: solid 1px #f24
+  }
+  
+  .page_title{
+    text-align: center;
+    color: #555;
+    font-weight: 500;
+  }
