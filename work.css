@@ -1,11 +1,12 @@
 *{
-    font-family: 微軟正黑體;
+    
     position: relative;
     
   }
 
   body{
-    background-color: #d1d1d1
+    background-color: #d1d1d1;
+    font-family: 微軟正黑體;
   }
   .namecard{
     width: 355px; height: 200px;
@@ -45,7 +46,6 @@
     width: 100px; height: 100px;
     border-radius: 100%;
     position: absolute;
-    
   }
   
   .circle1{
