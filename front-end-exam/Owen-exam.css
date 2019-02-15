@@ -1,0 +1,63 @@
+body {
+  margin: 24px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+}
+
+.button1, .button2, .button3 {
+  padding: 5px;
+
+  border: solid 2px #49624E;
+  border-radius: 6px;
+  background-color: #b6c0b8;
+}
+
+h1,h3,p,nav {
+  margin: 4px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 24px;
+
+  -webkit-text-stroke: 1px #1d271f;
+  /* I want the name of the restaurant looks more strong so I add -webkit-text-stroke for the title's stroke */
+  color: #49624E;
+}
+
+p {
+  margin-top: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 2px #49624E;
+  
+  background-color:#a8c3ad;
+}
+
+nav{
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+li {
+  margin: 20px;
+}
+
+em {
+  font-weight: lighter;
+}
+
+form,ul {
+  padding: 24px; 
+  background-color: #dadfdb;
+}
+
+footer {
+  text-align: center;
+}

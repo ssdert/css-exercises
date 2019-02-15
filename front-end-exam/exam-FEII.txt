@@ -1,0 +1,45 @@
+SPD
+Front End Technologies
+Exam - 15.02.2019
+
+Code and style a simple website for a vegan restaurant. It should consist of two files, the html and the css file.
+
+The website should consist of :
+* An introductory section with a mission statement, introduction or similar
+* A menu section with two menus, each containing 5 dishes with titles and descriptions
+* A contact section with a "get your menu delivered" form
+* A footer with copyright information and links to social channels
+* You should produce all your content, come up with a restaurant name and concept
+
+1.) HTML
+
+Define your metadata (description, author, viewport).
+
+Write semantic HTML that will validate.
+
+Structure your page semantically using these elements:
+article, aside, footer, header, main, nav, section
+
+Structure your content semantically using these elements:
+p, h1 - hy6, ul, ol, li, a, strong, em, img
+
+Code your form using:
+button, form, fields, input, label, textarea
+
+For each new element you introduce write a comment explaining why you chose it (even elements in the head  of the document)
+
+2.) CSS
+
+Give your page some love by styling it. Use your knowledge of:
+* selectors (use meaningful classes to style your content, remember DRY and KISS)
+* units (px, em, rem)
+* font styling (font-, text,-...)
+* box model (margin, border, padding, box sizing,...)
+
+Use consistent writing style and spacing when writing code.
+
+Place the files with the following names in the exam folder:
+YourName-exam.html
+YourName-exam.css
+
+Good luck!
