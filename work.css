@@ -1,12 +1,11 @@
 *{
-    
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     
   }
 
   body{
     background-color: #d1d1d1;
-    font-family: 微軟正黑體;
   }
   .namecard{
     width: 355px; height: 200px;
