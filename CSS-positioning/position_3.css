@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+article {
+  position: relative;
+
+  margin: auto;
+  margin-top: 30px;
+
+  padding: 20px;
+
+  width: 380px;
+  height: 160px;
+
+  background-color: black;
+
+}
+
+p { 
+  margin-right: 40px;
+  padding-top: 0.5em;
+  color: white;
+}
+
+.fake-image {
+  width: 80px;
+  height: 80px;
+
+  margin: 20px;
+
+  float: left;
+
+  background-color: yellow;
+}
+
+.circle {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 100%;
+
+  background-color: red;
+}
+
+@media (max-width: 300px) {
+
+  article {
+  width: 100%;
+  height: 100%;
+
+  font-family: sans-serif;
+
+  background-color: lightblue;
+  }
+
+  p {
+    clear: both;
+  }
+
+}

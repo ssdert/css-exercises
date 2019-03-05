@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+.article_0 {
+  position: relative;
+
+  float: left;
+
+  width: 100%; 
+}
+
+.article_0>h1 {
+  position: absolute;
+  top: 10px;
+}
+
+.article_0>h3 {
+  position: absolute;
+  top: 30px;
+}
+
+.article_0>p {
+  position: absolute;
+  top: 70px;
+}
+
+.article_1 {
+  position: relative;
+
+  float: left;
+
+  width: 50%; 
+}
+
+.article_2 {
+  position: relative;
+
+  float: right;
+
+  width: 50%;
+}
+
+.article_3 {
+  position: relative;
+
+  float: left;
+
+  width: 50vw;
+}
+
+.article_4 {
+  position: relative;
+
+  float: right;
+
+  width: 50vw;
+}
+
+.article_5 {
+  position: relative;
+
+  float: left;
+
+  width: 50%;
+}
+
+.article_6 {
+  position: relative;
+
+  float: right;
+
+  width: 50%;
+}
+
+.article_7 {
+  position: relative;
+
+  clear: both;
+  
+  width: 100%;
+}

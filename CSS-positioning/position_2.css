@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+article {
+  margin: auto;
+  margin-top: 30px;
+
+  padding: 30px;
+
+  max-width: 600px;
+
+  background-color: #dbdbdb;
+}
+
+.A {
+  margin: 0;
+  padding: 0;
+}
+
+.B {
+  margin: 0;
+  padding: 0;
+}
+
+.fake-image-1 {
+  width: 120px;
+  height: 180px;
+
+  margin-right: 20px;
+
+
+  float: left;
+
+  background-color: yellow;
+}
+
+.fake-image-2 {
+  width: 120px;
+  height: 180px;
+
+  margin-left: 20px;
+
+
+  float: right;
+
+  background-color: yellow;
+}
+
+@media (max-width: 300px) {
+
+    article {
+    width: 100%;
+    
+    font-family: sans-serif;
+
+    background-color: lightblue;
+  }
+  
+}
