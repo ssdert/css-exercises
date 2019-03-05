@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  color: #999;
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.grid-container {
+  margin: 20px auto;
+  max-width: 700px;
+
+  overflow: hidden;
+
+  border: 3px solid #000;
+}
+
+.grid-item {
+  min-height: 100px;
+
+  padding-top: 20px;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.grid-item:nth-child(odd) {
+  width: 43%;
+  float: left;
+}
+.grid-item:nth-child(even), .grid-item.grid-item-5 /* it select .grid-item.grid-item-5 */ {
+  width: 57%;
+  float: right;
+  
+  background-color: #ddd;
+}
+
+.grid-container .grid-item-1 {
+  min-height: 300px;
+
+  background-color: beige;
+}
+
+.grid-container .grid-item-2 {
+  min-height: 400px;
+
+  background-color: aqua;
+}
+
+.grid-container .grid-item-3 {
+  min-height: 400px;
+
+  background-color: mediumaquamarine;
+}
+
+.grid-container .grid-item-4 {
+  min-height: 200px;
+
+  background-color: white;
+}
+
+.grid-container .grid-item-5 {
+  background-color: bisque;
+}
+
+.grid-item-number {
+  font-size: 2em;
+  color: red;
+}
+
+@media (max-width: 460px) {
+  /* .grid-container .grid-item /* if its a decendent it needs a space */ 
+
+   /*  .grid-item {
+    width: 100% !important;
+    min-height: 100px !important;
+    max-height: 100px !important;
+ */
+
+   .grid-container{
+     margin: 0;
+   } 
+
+  .grid-container .grid-item {
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .grid-item-number {
+    display: block;
+  }
+
+  }

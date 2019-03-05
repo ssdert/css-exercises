@@ -42,19 +42,19 @@
 }
 
 .article_3 {
-  position: relative;
+  
 
   float: left;
-
-  width: 50vw;
+  clear: both;
+  width: 50%;
 }
 
 .article_4 {
-  position: relative;
+ 
 
   float: right;
-
-  width: 50vw;
+  clear: both;
+  width: 50%;
 }
 
 .article_5 {
