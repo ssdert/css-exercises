@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  align-items: baseline;
+  border: 2px solid red;
+}
+
+header .title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header a {
+  margin-left: 1em;
+  padding: 5px 10px;
+
+  border: 1px solid blue;
+}
+
+header a:first-child {
+  margin-right: auto;
+  margin-left: 0;
+}

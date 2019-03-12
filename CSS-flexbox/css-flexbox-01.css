@@ -42,8 +42,8 @@ li {
 li:first-child {
   font-size: 1.5em;
 
-    /* change the position of this flex item */
-    order: 1;
+  /* change the position of this flex item */
+  order: 1;
 }
 
 /**********************
@@ -59,7 +59,7 @@ nav {
 
 nav a.logo {
   font-size: 2em;
- text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .nav-first a {
