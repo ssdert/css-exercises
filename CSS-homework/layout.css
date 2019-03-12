@@ -8,7 +8,6 @@ body {
 
 section {
   display: flex;
-  align-self: stretch;
 
   margin: 5em;
 
