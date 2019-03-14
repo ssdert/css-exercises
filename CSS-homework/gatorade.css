@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+
+  padding: 1.2em;
+  background-color: black;
+}
+
+.banner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+  padding: 1.2em;
+  background-color: #D7D7D7;
+}
+
+.banner h2 {
+  font-weight: 750;
+}
+
+.img-1 {
+  max-width: 120%;
+}
+
+/***********
+HERO 
+***********/
+
+.hero {
+  display: flex;
+  flex-flow: row nowrap;
+
+  color: white;
+  background-color: #363636;  
+}
+
+.hero div {
+  max-width: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 6em;
+}
+
+h1 {
+  white-space: nowrap;
+  margin: 0;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+article .button-1 {
+  display: inline-block;
+
+  margin-top: 1.5em;
+  margin-left: 0;
+  padding: 1em 5em;
+  
+  border-radius: 10px;
+  background-color: #F07226;
+}
+
+h3 {
+  margin: 0;
+}
+
+.img-2 {
+  max-width: 120%
+}
+
+/***********
+MAIN
+***********/
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+
+  margin-bottom: 5em;
+  padding: 3em;
+}
+
+main article {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding: .5em;
+}
+
+h2 {
+  margin: 0;
+
+  font-weight: 750;
+}
+
+.button-2 {
+  display: inline-block;
+
+  margin-top: 10px;
+  padding: 1em 5em;
+  border-radius: 10px;
+
+  color: white;
+  background-color: #F07226;
+}
+
+/***********
+FOOTER
+***********/
+
+footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+  margin-top: 50px;
+  padding: 40px;
+  text-align: center;
+
+
+  color: white;
+
+  background-image: url(images/bkg-productfacts-liquid.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+@media (max-width: 650px) {
+  
+  .banner {
+    flex-flow: column;
+
+    padding: 0;
+    text-align: center;
+  }
+
+  .banner h2 {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .banner .second {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+
+  .hero {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+
+  .hero div {
+    margin-bottom: 20px;
+  }
+
+  .hero h1, p {
+    font-size: 100%;
+    white-space: wrap;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 180%;
+  }
+
+  .img-1 {
+    max-width: 70%;
+    margin-right: 0;
+    margin-bottom: -50px;
+  }
+
+  .button-1 {
+    margin-bottom: 10px;
+  }
+
+  main {
+    flex-flow: column;
+  }
+
+  .footer {
+    flex-flow: column;
+
+    padding: 0;
+    text-align: center;
+  }
+
+  footer img {
+    width: 100%;
+  }
+}
