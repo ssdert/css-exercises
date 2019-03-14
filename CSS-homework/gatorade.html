@@ -14,7 +14,12 @@
   <div class="wrapper">
 
     <header>
-      <img src="images/logo.png" alt="logo" width="80%" height="100%">
+      <!-- <img src="images/logo.png" alt="logo" width="80%" height="100%"> -->
+      <picture>
+        <source media="(max-width: 650px)" srcset="images/logo_mobile.png" />
+<!--         <source media="(min-width: 465px)" srcset="images/logo.png" /> -->
+        <img src="images/logo.png" alt="Sample"/>
+      </picture>
     </header>
     
     <div class="banner">
@@ -75,7 +80,10 @@
     </main>
 
     <footer>
-      <img src="images/logo.png" alt="logo">
+      <!--       <img src="images/logo.png" alt="logo"> -->
+      <source media="(max-width: 650px)" srcset="images/logo_mobile.png" />
+      <!--         <source media="(min-width: 465px)" srcset="images/logo.png" /> -->
+      <img src="images/logo.png" alt="Sample"/>
       <p>&copy;2016 Stokely-Van Camp, Inc All Rights Reserved.</p>
     </footer>
   </div>
