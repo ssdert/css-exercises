@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   width: 5em;
   height: 5em;
@@ -28,8 +29,6 @@ body {
   background-color: #161617;
 
   transition: all 1s ease-in-out;
-             
-              
 }
 
 .none {
@@ -54,6 +53,9 @@ img {
 
 
 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
 
   top: 30px;

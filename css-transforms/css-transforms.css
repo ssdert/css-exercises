@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  /* center */
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  align-content: center;
+  
+}
+
+/* 
+  The main Ball container
+*/
+.ball {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* to contain the absolutely positioned pseudo elements */
+  position: relative;
+  /* to hide them */
+   overflow: hidden;  
+
+  /* style */
+  font-size: 2em;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.ball-number {
+  width: 40%;
+  height: 40%; 
+/*  flex-basis: 40%; */
+/*   display: inline-block; */
+
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* style */
+  background-color: beige;
+  border-radius: 50%;
+}
+
+.ball-number-alt:before {
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  position: absolute;
+
+  /* move the box up */
+  transform: translateY(-80%);
+
+  background-color: beige;
+}
+
+.ball-number-alt:after {
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* move the box up */
+  transform: translateY(80%);
+
+  background-color: beige;
+}
+
+/* different billiard balls */
+.ball-five {
+  background-color: orange;
+}
+
+.ball-nine {
+  background-color: rgb(255, 217, 0);
+  text-decoration: underline;
+}
+
+.ball-eleven {
+  background-color: rgb(252, 0, 0);
+}
+
+.ball-transform {
+  transition: transform 350ms ease-out 500ms;
+}
+
+.ball-transform:hover {
+  transition: transform 750ms ease-in-out;
+
+  /* defult transform origin */
+  transform-origin: center;
+  transform: translateX(50%) rotate(1turn);
+
+  /* use the cursor meant for links */
+  cursor: pointer;
+}
