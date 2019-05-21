@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<!--  
+   Is it spring?
+  (true)
+
+  Is summer next?
+  (true)
+
+  Do cakes grow on tree?
+  (false)
+ -->
+
+<section class="quiz">
+  <article class="question" id="question-1" data-answer="true">
+   <h4>Is it spring?</h4>
+    <p>
+      <input type="radio" name="q1" value="true" id="q1t">
+      <label for="q1t">Yes</label>
+      <input type="radio" name="q1" value="false" id="q1f">
+      <label for="q1f">No</label>
+    </p>
+  </article>
+
+  <article class="question" id="question-2" data-answer="true">
+    <h4>Is summer next?</h4>
+     <p>
+       <input type="radio" name="q2" value="true" id="q2t">
+       <label for="q2t">Yes</label>
+       <input type="radio" name="q2" value="false" id="q2f">
+       <label for="q2f">No</label>
+     </p>
+   </article>
+
+   <article class="question" id="question-3" data-answer="true">
+    <h4>Do cakes grow on tree?</h4>
+     <p>
+       <input type="radio" name="q3" value="true" id="q3t">
+       <label for="q3t">Yes</label>
+       <input type="radio" name="q3" value="false" id="q3f">
+       <label for="q3f">No</label>
+     </p>
+   </article>
+
+   <article class="question" id="question-3" data-answer="true">
+      <h4>Is Taiwan part of China?</h4>
+       <p>
+         <input type="radio" name="q4" value="true" id="q4t">
+         <label for="q4t">Yes</label>
+         <input type="radio" name="q4" value="false" id="q4f">
+         <label for="q4f">No</label>
+       </p>
+     </article>
+
+     <article class="question" id="question-3" data-answer="true">
+        <h4>Is Taiwan a member of the United Nations?</h4>
+         <p>
+           <input type="radio" name="q5" value="true" id="q5t">
+           <label for="q5t">Yes</label>
+           <input type="radio" name="q5" value="false" id="q5f">
+           <label for="q5f">No</label>
+         </p>
+       </article>
+</section>
+
+<button class="submit" onclick="submitQuiz()">Submit your result</button>
+
+  <script>
+    var answer = [true, true, false]
+
+    function submitQuiz() {
+/* 
+      console.log(document.getElementById('question-1').dataset.answer);
+
+      console.log(document.getElementById('q1f').value); */
+      console.log(document.getElementById('q1t').checked);
+      console.log(document.getElementById('q2t').checked);
+      console.log(document.getElementById('q3f').checked);
+      console.log(document.getElementById('q4f').checked);
+      console.log(document.getElementById('q5f').checked);
+    }
+  </script>
+</body>
+</html>
