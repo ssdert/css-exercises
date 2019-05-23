@@ -84,7 +84,7 @@
   font-weight: 600;
   padding-top: .4em;
   letter-spacing: -4px;
-  font-size: 10em;
+  font-size: 5em;
 
   color: #B80A13;
   background-color: #DFE1D6; 
@@ -92,7 +92,7 @@
 
 @media (max-width: 749px) {
   .item_12 {
-    font-size: 13vw;
+    font-size: 11vw;
   }
 }
 
