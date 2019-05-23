@@ -19,7 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: #00000A;
 }  
 
@@ -94,6 +93,9 @@
   .item_12 {
     font-size: 11vw;
   }
+  .item_11 {
+    font-size: 2.5vw
+  }
 }
 
 .item_13 {
@@ -125,5 +127,6 @@
 }
 
 .item_20 {
+  margin-bottom: 0;
   grid-area: 22 / 1 / 22 / 6; 
 }
