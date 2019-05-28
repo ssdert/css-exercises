@@ -23,11 +23,11 @@ var nameButton = document.getElementById('nameButton');
 var nameInput = document.getElementById('myName');
 var messageBox = document.getElementById('messageBox');
 var undoButton = document.getElementById('undoButton');
-var showButton = document.getElementById('showButton')
+var showButton = document.getElementById('showButton');
 
 nameButton.addEventListener('click', sayMyName);
 undoButton.addEventListener('click', undo);
-showButton.addEventListener('click', showAllName)
+showButton.addEventListener('click', showAllName);
 
 /*  console.log = function(message) {
   document.getElementById('nameBox').innerHTML = message;
