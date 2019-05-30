@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+/*   display: flex;
+  flex-flow: column; */
+  position: relative;
+  
+  margin: auto;
+  width: 720px;
+  height: 525px;
+  overflow: hidden;
+}
+
+.R {
+/*   align-self: auto; */
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+
+  width: 720px;
+  height: 700px;
+
+  background: radial-gradient(
+  rgb(2, 16, 95) 29%, #A40700 30%, 
+  rgb(206, 120, 117) 30%, #A40700 40%, 
+  #DD5B57 41%, #A40700 50%, 
+  #DD5B57 51%, #A40700 65%, 
+  #DD5B57 66%, #A40700 90%,
+  #DD5B57 71%, #A40700 100%);
+}
+
+@media (max-width: 440px) {
+  .wrapper {
+    width: 100vw;
+  }
+  .R {
+    width: 100vw;
+    height: 100vw;
+  }
+}

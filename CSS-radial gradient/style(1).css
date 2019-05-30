@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  
+
+  height: 600px;
+  width: 600px;
+
+  background: radial-gradient(red 0% 15%, yellow 15% 16%, red 16% 20%, yellow 20% 21%, red 22% 27%, yellow 27% 28%, red 32% 37%, yellow 38% 39%, red 42% 47%, yellow 48% 49%, red 52% 57%, yellow 58% 59%, red 62% 67%, yellow 68% 70%, red 75% 80%)
+}
