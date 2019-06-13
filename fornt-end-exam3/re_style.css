@@ -193,13 +193,13 @@ header {
     margin: 0 20px 20px 0;
   }
 
-  .radio_number{
+/*   .radio_number{
      
-  }
+  } */
 
-  .radio_name {
+/*   .radio_name {
 
-  }
+  } */
 
   .clock {
     display: flex;
@@ -211,10 +211,10 @@ header {
     border: 1px solid var(--alt-color);
   }
 
-  .clock_number {
+/*   .clock_number {
     
   }
-
+ */
   .clock_p {
     order: 2;
     line-height: 180%;
