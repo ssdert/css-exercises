@@ -35,12 +35,11 @@ toNextSlideOne.addEventListener('click', nextSlideOne);
 
 function nextSlideOne() {
 
-  document.getElementById('earth').style.display = 'grid';
+  document.getElementById('earth').style.display = 'none';
   document.getElementById('island').style.display = 'none';
   document.getElementById('dolphin').style.display = 'grid';
-  document.getElementById('dolphin').style.left = '800px';
-  document.getElementById('dolphin').style.right = '800px';  
   
+
 
   /* TweenMax.from('#dolphin .card__image', 2, { x: -1000, ease: Elastic.easeOut});
   TweenMax.from('#dolphin .card__image--bg', 2, { y: 1000, ease: Elastic.easeOut}); */
@@ -52,10 +51,8 @@ toNextSlideTwo.addEventListener('click', nextSlideTwo);
 function nextSlideTwo() {
 
   document.getElementById('island').style.display = 'grid';
-  document.getElementById('dolphin').style.display = 'grid';
+  document.getElementById('dolphin').style.display = 'none';
   document.getElementById('earth').style.display = 'none';
-  document.getElementById('island').style.left = '800px';
-  document.getElementById('dolphin').style.right = '800px'; 
   
 
   /* TweenMax.from('#island .card__image', 2, { x: -1000, ease: Elastic.easeOut});
@@ -68,10 +65,9 @@ toNextSlideThree.addEventListener('click', nextSlideThree);
 function nextSlideThree() {
 
   document.getElementById('earth').style.display = 'grid';
-  document.getElementById('island').style.display = 'grid';
+  document.getElementById('island').style.display = 'none';
   document.getElementById('dolphin').style.display = 'none';
-  document.getElementById('earth').style.left = '1600px';
-  document.getElementById('island').style.right = '800px';  
+
 
  /*  TweenMax.from('#earth .card__image', 2, { x: -1000, ease: Elastic.easeOut});
   TweenMax.from('#earth .card__image--bg', 2, { y: 1000, ease: Elastic.easeOut}); */

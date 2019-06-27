@@ -30,6 +30,10 @@ body {
   display: none;
 }
 
+.dolphin {
+  background-color: #ff9393;
+}
+
 a.navigation__link-active { color: #111; text-decoration: underline;}
 
 h2 {
