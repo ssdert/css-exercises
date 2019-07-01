@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+<!--   <div class="ball" id="ball"></div> -->
+  <circle class="ball" id="ball" cx="122" cy="122" r="119.5" 
+  fill="#3B8D70" />
+
+  <script>
+
+    const zombie = document.querySelector('#ball');
+    console.log('AAA');
+    zombie.addEventListener('mouseover', colorMeZombie);
+    zombie.addEventListener('mouseout', uncolorMeZombie);
+
+    function colorMeZombie() {
+      console.log('BBB');
+      zombie.querySelector('#ball').style.setProperty('fill', 'yellow');
+    }
+    function uncolorMeZombie() {
+      console.log('CCC');
+      zombie.querySelector('#ball').style.setProperty('fill', '#3B8D70');
+    }
+
+  </script>
+</body>
+
+</html>
