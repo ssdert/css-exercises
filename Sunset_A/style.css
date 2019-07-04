@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+:root {
+  --apexColor1: rgb(208, 230, 10);
+  --apexColor2: rgb(226, 155, 23);
+  --apexColor3: rgb(216, 123, 1);
+  --waterApexColor: rgb(32, 32, 199);
+}
+
+.apex-color {
+  fill:var(--apexColor1);
+
+  transition: fill 10s ease-in-out;
+}
+
+
+.reply-btn {
+  position: absolute;
+  bottom: 240px;
+  left: 170px;
+
+  border: 2px solid rgb(228, 171, 66);
+  border-radius: 10px;
+  padding: 3px 15px;
+
+  background: none;
+
+  font-weight: 600;
+  font-size: 15px;
+  font-family: roboto, sans-serif;
+  cursor: pointer;
+}

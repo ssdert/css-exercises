@@ -14,6 +14,14 @@
   fill="#3B8D70" />
 
   <script>
+    const ball = document.querySelector('.ball');
+    
+        function makeItBlue() {
+      console.log('blue it is');
+      // ball.style.backgroundColor = 'blue';
+      ball.style.setProperty('--bgColor', '#3C1FBC');
+      ball.style.setProperty('--scale', '20');
+    }
 
     const zombie = document.querySelector('#ball');
     console.log('AAA');

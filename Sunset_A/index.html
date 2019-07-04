@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sunset</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <!-- <button onclick="reply()" id="replyBtn" class="reply-btn">Reply</button> -->
+
+  <div class="scene">
+      <svg x="0px" y="0px"
+      viewBox="0 0 425.87 219.06" style="enable-background:new 0 0 425.87 219.06;">
+    <style type="text/css">
+      .st0{fill:#EF7F78;}
+      .st1{fill:#EB5E4E;}
+      .st2{fill:#E94B4D;}
+      .st3{fill:#FFFFFF;}
+      .st4{fill:#4E7FC0;stroke:#6CB0E1;stroke-width:3;stroke-miterlimit:10;}
+      .st5{fill:#E0E0E0;}
+      .st6{fill:#AFAFAF;}
+      .background-image{fill:#20234C;z-index: -99;}
+      .nuvola{fill:#8D8D8E;}
+    </style>
+    
+    <rect id="background" x="51.25" y="-20.52" class="background-image" width="338.81" height="148"/>
+    
+    <g id="moon">
+      <circle class="st5" cx="352.68" cy="160.85" r="33.19"/>
+      <circle class="st6" cx="336" cy="173.45" r="6.81"/>
+      <circle class="st6" cx="331.02" cy="149.55" r="4.02"/>
+      <circle class="st6" cx="365.23" cy="178.38" r="9.04"/>
+      <circle class="st6" cx="361.97" cy="146.95" r="7.6"/>
+    </g>
+    <circle id="outer-circle" class="st0" cx="354.89" cy="0" r="38.81"/>
+    <circle id="medium-circle" class="st1" cx="354.89" cy="0" r="34.72"/>
+    <circle id="inner-circle" class="st2" cx="354.89" cy="0" r="26.89"/>
+    <path id="nuvola1" class="nuvola" d="M92.52,60.72c-18.64-4.34-23.23,16.6-23.23,16.6s-8.43-3.57-10.47,4.34s10.98,9.45,10.98,9.45
+    s-2.81,5.62,9.45,8.17s19.15-1.79,19.15-1.79s8.17,10.21,22.72,9.45c14.55-0.77,17.87-10.98,17.87-10.98s17.36,2.04,22.21-5.36
+    c4.85-7.4,0-16.85,0-16.85s2.3-9.96-10.72-16.6s-25.79,2.81-25.79,2.81s-4.19-8.43-13.71-8.43S92.52,60.72,92.52,60.72z"/>
+    <path id="nuvola2" class="nuvola" d="M273.65,70.31c-9-2.1-11.22,8.01-11.22,8.01s-4.07-1.73-5.05,2.1s5.3,4.56,5.3,4.56s-1.36,2.71,4.56,3.94
+    s9.24-0.86,9.24-0.86s3.94,4.93,10.97,4.56c7.03-0.37,8.63-5.3,8.63-5.3s8.38,0.99,10.72-2.59c2.34-3.57,0-8.14,0-8.14
+    s1.11-4.81-5.18-8.01c-6.29-3.2-12.45,1.36-12.45,1.36s-2.02-4.07-6.62-4.07S273.65,70.31,273.65,70.31z"/>
+    <rect  x="51.06" y="127.66" class="st3" width="335.49" height="91.4"/>
+    <path id="water-line" class="st4" d="M390.13,127.66H51.06H390.13z"/>
+    </svg>
+
+  </div>
+
+
+  
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min.js"></script>
+  
+  <script>
+    
+   var tl = new TimelineMax;
+
+   const outer = document.getElementById('outer-circle')
+   const mid = document.getElementById('medium-circle')
+   const inner = document.getElementById('inner-circle')
+   const horizon = document.getElementById('water-line')
+   const background = document.getElementById('background')
+   const nuvola1 = document.getElementById('nuvola1')
+   const nuvola2 = document.getElementById('nuvola2')
+  
+   mySunset();
+
+    function mySunset() {      
+
+      tl
+      .from(outer, 10, {fill: '#D0E60A'})
+      .from(mid, 10, {delay: -10, fill: '#D0E60A'})
+      .from(inner, 10, {delay: -10, fill: '#D0E60A'})
+      // .to(horizon, 1, {delay: 2, scaleX: .00, fill: '#f86882' })
+      // .to(background, 5, {background:})
+      .to(nuvola1, 20, {delay: -10, x: 100})
+      .to(nuvola2, 20, {delay: -20, x: 50})
+      .to(moon ,10, {delay: -10 ,x: -250, y: -120,})
+      
+      TweenMax.to(outer, 15, {x: -250, y: 180})
+      TweenMax.to(mid, 15, {x: -250, y: 180})
+      TweenMax.to(inner, 15, {x: -250, y: 180})
+      TweenMax.to(horizon, 15, {fill: '#f86882'})
+      TweenMax.from(background, 10, {delay:6, fill: '#f18955' })
+    }
+
+  //  function reply() {
+  //      tl
+  //       .from(outer, 10, {fill: '#D0E60A'})
+  //       .from(mid, 10, {delay: -10, fill: '#D0E60A'})
+  //       .from(inner, 10, {delay: -10, fill: '#D0E60A'})
+  //       // .to(horizon, 1, {delay: 2, scaleX: .00, fill: '#f86882' })
+  //       // .to(background, 5, {background:})
+  //       .to(nuvola1, 20, {delay: -10, x: 100})
+  //       .to(nuvola2, 20, {delay: -20, x: 50})
+  //       .to(moon ,10, {delay: -10 ,x: -250, y: -120,})
+        
+  //       TweenMax.to(outer, 15, {x: -250, y: 180})
+  //       TweenMax.to(mid, 15, {x: -250, y: 180})
+  //       TweenMax.to(inner, 15, {x: -250, y: 180})
+  //       TweenMax.to(horizon, 15, {fill: '#f86882'})
+  //       TweenMax.from(background, 10, {delay:6, fill: '#f18955' })
+
+  //  }
+
+  
+
+    
+  
+  </script>
+
+  
+</body>
+</html>
