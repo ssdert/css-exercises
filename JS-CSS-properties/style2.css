@@ -12,14 +12,14 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   background: linear-gradient(#eee, #ddd);
 }
 
 .ball {
   --scale: 10;
-  --bgColor: #000;
+  --bgColor: #f2d413;
 
 
   width: 20px;
@@ -36,4 +36,10 @@ body {
 .ball {
   transition: fill 500ms ease,
               stroke 200ms ease;
+}
+
+.cloud {
+  position: absolute;
+  top: 20px;
+  right: 50px;
 }

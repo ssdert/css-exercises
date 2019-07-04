@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+      <div id="item1" class="grid-item item_1"></div>
+      <div class="grid-item item_2"></div>
+      <div class="grid-item item_3"></div>
+      <div class="grid-item item_4"></div>
+      <div class="grid-item item_5"></div>
+      <div id="item6" class="grid-item item_6"></div>
+      <div class="grid-item item_7"></div>
+      <div class="grid-item item_8"></div>
+      <div class="grid-item item_9"></div>
+      <div class="grid-item item_10"></div>
+      <div class="grid-item item_12"></div>
+      <div class="grid-item item_11"></div>
+      <div class="grid-item item_13"></div>
+      <div class="grid-item item_14"></div>
+      <div class="grid-item item_15"></div>
+      <div id="item16" class="grid-item item_16"></div>
+    </div>
+</body>
+
+<script src="TweenMax.js"></script>
+
+<script>
+    const gr = document.getElementById('item1');
+
+    gr.addEventListener('mouseover', changeSize);
+
+    function changeSize() {
+      TweenMax.to('#item1', 1, {scale: .5})
+      TweenMax.to('#item6', 1, {height: .2})
+      TweenMax.to('#item16', 1, {scale: .2})
+    }
+</script>
+
+
+
+</html>

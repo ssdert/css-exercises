@@ -10,11 +10,59 @@
 
 <body>
 
-  <div class="wrapper">
-    <img src="Antu_folder-cloud.svg" alt="">
-  </div>
+    <div class="container">
 
+     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 841.9 595.3" style="enable-background:new 0 0 841.9 595.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:#E94E1B;}
+	.st3{fill:#A14B2C;}
+	.st4{opacity:0.44;fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="420.9449" y1="595.2756" x2="420.9449" y2="462.5">
+	<stop  offset="0" style="stop-color:#D6C960"/>
+	<stop  offset="1" style="stop-color:#C83432"/>
+</linearGradient>
+<rect y="462.5" class="st0" width="841.9" height="132.8"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="420.9449" y1="462.5" x2="420.9449" y2="-9.094947e-13">
+	<stop  offset="0" style="stop-color:#F39200"/>
+	<stop  offset="1" style="stop-color:#E6332A"/>
+</linearGradient>
+<rect id="bg" class="st1" width="841.9" height="462.5"/>
+<circle id="sun" class="st2" cx="420.9" cy="207.3" r="82.1"/>
+<polygon class="st3" points="0,462.5 162.5,196.5 430.5,462.5 "/>
+<polygon class="st2" points="616.5,254.5 227.5,462.5 841.9,465 "/>
+<path id="cloudA" class="st4" d="M257.5,133H75c-6.6,0-12-5.4-12-12v-5.5c0-6.6,5.4-12,12-12h182.5c6.6,0,12,5.4,12,12v5.5
+	C269.5,127.6,264.1,133,257.5,133z"/>
+<path id="cloudB" class="st4" d="M162,108.5H42c-6.6,0-12-5.4-12-12v0c0-6.6,5.4-12,12-12h120c6.6,0,12,5.4,12,12v0
+	C174,103.1,168.6,108.5,162,108.5z"/>
+<path id="cloudC" class="st4" d="M771.5,198.8H589c-6.6,0-12-5.4-12-12v-5.5c0-6.6,5.4-12,12-12h182.5c6.6,0,12,5.4,12,12v5.5
+	C783.5,193.4,778.1,198.8,771.5,198.8z"/>
+<path id="cloudD" class="st4" d="M799.9,181.3h-120c-6.6,0-12-5.4-12-12v0c0-6.6,5.4-12,12-12h120c6.6,0,12,5.4,12,12v0
+	C811.9,175.9,806.5,181.3,799.9,181.3z"/>
+</svg>
 
+    </div>
+
+    <script>
+        const bg = document.getElementById('bg');
+        const sun = document.getElementById('sun');
+
+        bg.addEventListener('mouseover', changeColor);
+
+        function changeColor() {
+          TweenMax.to('#bg', 1, {colorProps:{borderColor:"red", myCustomProp:"rgb(204,51,0)"}, ease:Linear.easeNone})
+          TweenMax.to('#sun', 6, {y: 200, scale: .5, fill: '#fff3a3'})
+          TweenMax.to('#cloudA', 6, {x: 20})
+          TweenMax.to('#cloudB', 6, {x: 10})
+          TweenMax.to('#cloudC', 6, {x: -20})
+          TweenMax.to('#cloudD', 6, {x: -10})
+        }
+    </script>
+
+<script src="TweenMax.js"></script>
 </body>
 
 </html>
