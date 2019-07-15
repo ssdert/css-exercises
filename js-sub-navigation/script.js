@@ -10,6 +10,9 @@ backBtn.addEventListener('click', clickedBackBtn);
 
 // functions
 function clickedMenuLink(event) {
+  // prevents the default behaviour of the link
+  event.preventDefault();
+
   // console.log(event);
   subMenu.classList.add('submenu-show');
   mainMenu.classList.add('menu-hide');
@@ -35,6 +38,5 @@ function clickedBackBtn(event) {
 }
 
 function showHideSubMenu() {
-  console.log('show hide');
   subMenu.classList.toggle('submenu-hide');
 }
