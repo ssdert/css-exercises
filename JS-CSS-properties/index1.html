@@ -100,12 +100,14 @@
       // console.log('it\'s zombie time');
       zombie.querySelector('circle').style.setProperty('fill', 'yellow');
       zombie.querySelector('circle').style.setProperty('stroke', 'yellow');
-      zombie.querySelector('rect').style.setProperty('--myColor', '#3BBD70');
-      zombie.querySelector('rect').style.setProperty('transform', 'scale(10)');
+      zombie.querySelector('rect').style.setProperty('fill', '#3BBD70');
+      zombie.querySelector('rect').style.setProperty('transform', 'scale(0.5)');
     }
     function uncolorMeZombie() {
       zombie.querySelector('circle').style.setProperty('fill', '#3B8D70');
       zombie.querySelector('circle').style.setProperty('stroke', '#000');
+      zombie.querySelector('rect').style.setProperty('fill', 'red');
+      zombie.querySelector('rect').style.setProperty('transform', 'scale(1)');
     }
 
 
