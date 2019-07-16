@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --textfamily: sans-serif;
+  --textsize: 25px;
+  --textweight: 400;
+  --textcolor: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  min-width: 450px;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+
+  overflow: hidden;
+
+  background-color: #fffef2;
+}
+
+.title {
+  margin: 20px;
+  font-family: var(--textfamily);
+  font-weight: var(--textweight);
+}
+
+.main-menu { 
+  position: relative;
+}
+
+.cart-icon {
+  width: 40px;
+
+  position: absolute;
+  top: 20px; 
+  right: 20px;
+}
+
+.main-list {
+  list-style: none;
+
+  font-size: var(--textsize);
+  font-weight: var(--textweight);
+  color: var(--textcolor);
+  font-family: var(--textfamily);
+}
+
+li {
+  margin-top: 15px;
+}
+
+.shop-list {
+  list-style: none;
+  /* display: none; */
+  opacity: 0;
+
+  top: 0px;
+  right: -150px;
+
+  position: absolute;
+  
+  font-size: var(--textsize);
+  font-weight: var(--textweight);
+  color: var(--textcolor);
+  font-family: var(--textfamily);
+}
+
+.read-list {
+  list-style: none;
+  /* display: none; */
+  opacity: 0;
+
+  top: 0px;
+  right: -234px;
+
+  position: absolute;
+  
+  font-size: var(--textsize);
+  font-weight: var(--textweight);
+  color: var(--textcolor);
+  font-family: var(--textfamily);
+}
+
+.search-section {
+  list-style: none;
+  /* display: none; */
+  opacity: 0;
+
+  top: 0px;
+  right: -234px;
+
+  position: absolute;
+  
+  font-size: var(--textsize);
+  font-weight: var(--textweight);
+  color: var(--textcolor);
+  font-family: var(--textfamily);
+}
+
+.search-section h3 {
+  font-size: 18px;
+  font-weight: var(--textweight);
+}
+
+.search-section input {
+  border: none;
+  border-bottom: solid 2px rgb(92, 92, 92);
+  width: 230px;
+
+  position: relative;
+
+  background:none;
+}
+
+.search-section ul {
+  padding: 0;
+  
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  
+  background: none;
+  font-size: var(--textsize);
+  font-weight: var(--textweight);
+  color: var(--textcolor);
+  font-family: var(--textfamily);
+}
+
+.back-btn {
+  opacity: 0;
+  margin-left: 20px;
+}
+
+.arrow-back {
+  width: 10px;
+}

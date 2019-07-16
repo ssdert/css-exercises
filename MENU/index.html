@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aesop-menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+    <header class="header">
+      <h1 class="title">Aesop.</h1>
+      <!-- <a href="#"><img class="cart-icon" src="cart.svg" alt="cart"></a> -->
+      <button id="backBtn" class="back-btn" onclick="back()"><img class="arrow-back" src="arrow.png" alt="arrow"></button>
+    </header>
+    <nav class="main-menu">
+      <ul id="mainList" class="main-list">
+        <li class="main-list-item"> <button onclick="openShop()">Shop</button></li>
+        <li class="main-list-item"> <button onclick="openRead()">Read</button></li>
+        <li class="main-list-item">Visit</li>
+        <li class="main-list-item"> <button onclick="openSearch()">Search</button></li>
+      </ul>
+      <div>   
+        <ul id="shopListRight" class="shop-list">
+          <li>Skin</li>
+          <li>Hair</li>
+          <li>Body</li>
+          <li>Fragrance</li>
+          <li>Home</li>
+          <li>Kits  & Travel</li>
+          <li>Gifts</li>
+        </ul>
+      </div>
+      <div>
+        <ul id="readListRight" class="read-list">
+          <li>About</li>
+          <li>Philosophy</li>
+          <li>The Ledger</li>
+          <li>The Fabulist</li>
+          <li>Taxonomy of Design</li>
+        </ul>
+      </div>
+      <div id="searchSection" class="search-section">
+          <input type="text">
+          <h3>Sudgested</h3>
+          <ul>
+            <li>Cleanser</li>
+            <li>Hydrators </li>
+            <li>Parslet seed</li>
+            <li>Aesop Gift Card</li>
+          </ul>
+        </div>  
+    </nav>
+   
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+ <script src="TweenMax.js"></script>
+ <script src="script.js"></script>
+  
+</body>
+</html>
