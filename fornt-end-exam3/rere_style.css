@@ -15,21 +15,23 @@ body {
 
   font-family: sans-serif;
   color: var(--text-color);
-
   background-color: #eee;
 }
 
 .wrapper {
   max-width: 100vw;
   padding: var(--padding);
-
   grid-gap: 10px;
 
   background-color: var(--bg-color);
 }
 
-h4, .h2_title {
-  text-transform: uppercase; 
+h2, h3, li {
+  text-transform: uppercase;
+}
+
+li {
+ list-style-type: none;
 }
 
 a {
@@ -37,11 +39,6 @@ a {
   text-decoration: none;
   color: #eee;
 }  
-
-img {
-  max-width:100%;
-  height:auto;
-}
 
 /* ------header------- */
 
@@ -54,238 +51,42 @@ header {
   grid-column:  1 / 2;
 }
 
-.menu_1 {
-  grid-column:  2 / 3;
+.menu {
+  grid-column:  2 / 4;
 }
 
-.menu_2 {
-  grid-column:  3 / 4;
+ul {
+  max-width: 6em;
+  max-height: 5em;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+ul li {
+  padding: 2px;
 }
 
 .social_link {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
 
   grid-column:  4 / 5;
 }
 
+.social_link a {
+  margin: 4px;
+}
+
 /* ------main------- */
 
-.h2_title {
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+h2 {
   grid-column: 1 / 5;
-}
-
-.radio, .clock, .stop_sign, .lamp, footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.radio_image, .clock_image, .lamp_image, .mail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-column: 2 / 3;
-}
-
-.radio_number, .radio_name, .clock_number, .clock_p, .lamp_number, .lamp_p, .copy_right {
- grid-column: 1 / 2;
-} 
-
-.mail {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-
-@media (min-width:1200px) {
-  
-  .wrapper {
-  margin: auto;
-  max-width: 1264px;
-  max-height: 1448px;
-  
-  padding: var(--padding);
-  
-  display: grid;
-  grid-template-rows: 2fr 4fr 1fr;
-  grid-gap: 10px;
-
-  background-color: var(--bg-color);
-  }
-
-  /* ------header------- */
-
-  header {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  .title {
-    grid-column:  1 / 2; 
-    color: var(--brand-color);
-  }
-
-  .menu_1 {
-    display: flex;
-    flex-flow: column;
-
-    grid-column: 3 / 4; 
-  }
-
-  .menu_2 {
-    display: flex;
-    flex-flow: column;
-
-    grid-column: 5 / 6; 
-  }
-
-  .social_link {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    
-    grid-column: 10 / 12; 
-  }
-
-  .social_link a {
-    padding: 20px;
-  }
-
-  /* ------main------- */
-
-  main {
-    display: grid;
-  }
-
-  article {
-    max-height: 1000px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-
-  .h2_title {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    text-align: right;
-    color: var(--brand-color);
-
-    line-height: 150%;
-    font-size: 2.5em;
-    grid-area: 1 / 1 / 2 / 3;
-  }
-
-  .radio{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    box-shadow: 10px 80px 90px 5px rgba(0, 0, 0, 0.3);
-    grid-area: 2 / 1 / 3 / 3;
-    background-color: var(--alt-color);
-  }
-
-  .radio_image {
-    margin: 0 20px 20px 0;
-  }
-
-  .radio_number{
-     
-  }
-
-  .radio_name {
-
-  }
-
-  .clock {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-
-    grid-area: 1 / 3 / 3 / 4;
-    border: 1px solid var(--alt-color);
-  }
-
-  .clock_number {
-    
-  }
-
-  .clock_p {
-    order: 2;
-    line-height: 180%;
-    margin-left: 20px;
-/*     grid-area: 4 / 7 / 5 / 10; */
-  }
-
-  .stop_sign {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: 10px 80px 90px 5px rgba(0, 0, 0, 0.3);
-    grid-area: 2 / 4 / 3 / 5;
-  }
-
-  .stop_sign_next {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-left: 20px;
-    grid-area: 1 / 4 / 2 / 5;
-  }
-
-  .stop_sign_number {
-    margin-left: 20px;
-  }
-
-  .arrow {
-    margin-left: 20px;
-    grid-area: 1 / 4 / 2 / 5;
-  }
-
-  .lamp {
-    padding: 200px 0 50px 0;
-    display: grid;
-
-    box-shadow: 10px 80px 90px 5px rgba(0, 0, 0, 0.3);
-    grid-area: 3 / 2 / 5 / 3;
-  }
-
-  .lamp_image {
-    margin-left: 20px;
-    grid-area: 3 / 1 / 5 / 5;
-  }
-
-  .lamp_number {
-    margin-left: 20px;
-  }
-
-  .lamp_p {
-    line-height: 180%;
-    margin: 20px;
-    grid-area: 3 / 3 / 4 / 5;
-  }
-
-  /* ------footer------- */
-
-  footer {
-    margin-top: 80px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(12, 1fr)
-  }
-
-  .copy_right {
-    grid-column:  3 / 7;
-  }
-
-  .mail {
-    grid-column:  10 / 12;
-  }
 }
