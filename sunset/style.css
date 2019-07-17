@@ -2,13 +2,44 @@
   box-sizing: border-box;
 }
 
-body {
-  margin-top: 100px;
-}
-
 .container {
   overflow: hidden;
   margin: 0 auto;
   max-width: 1300px;
-  max-height: 1050px;
+  min-height: 100vh;
+  /* max-height: 1050px; */
+}
+
+#sun {
+  transform-origin: 0 100%;
+
+  animation-name: sunAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes sunAnimation {
+  0% {
+    transform: rotate(-.25turn);
+  }
+  50%, 70% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(.25turn);
+  }
+}
+
+
+button {
+  padding:0 20px 0 20px;
+  border: none;
+  font-size: 2em;
+  background-color: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
 }
