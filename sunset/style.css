@@ -10,7 +10,9 @@
   /* max-height: 1050px; */
 }
 
-#sun {
+.sun {
+  -webkit-animation-play-state: paused;
+  
   transform-origin: 0 100%;
 
   animation-name: sunAnimation;
@@ -31,7 +33,6 @@
   }
 }
 
-
 button {
   padding:0 20px 0 20px;
   border: none;
@@ -43,3 +44,7 @@ nav {
   display: flex;
   justify-content: center;
 }
+
+/* .stl {
+  background-color: #fff;
+} */

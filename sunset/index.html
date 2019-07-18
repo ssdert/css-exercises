@@ -27,7 +27,7 @@
 </linearGradient>
 <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="420.9449" y1="462.5" x2="420.9449" y2="-9.094947e-13">
   <stop  offset="0" style="stop-color:#F39200"/>
-	<stop  offset="1" style="stop-color:#E6332A"/>
+	<stop  offset="1" style="stop-color:#C83432"/>
 </linearGradient>
 <rect id="bg" class="st1" width="841.9" height="462.5"/>
 <filter id="sunGlow">
@@ -35,7 +35,7 @@
 </filter>
 <g id="sun" class="sun">
   <circle cx="250" cy="150" r="50" fill="yellow" stroke="none" filter="url(#sunGlow)" />
-  <circle cx="250" cy="150" r="50" fill="yellow" stroke="none" />
+  <circle cx="250" cy="150" r="50" fill="yellow" stroke="none" /> 
 </g>
 <rect y="462.5" class="st0" width="841.9" height="132.8"/>
 <polygon class="st3" points="0,462.5 162.5,196.5 430.5,462.5 "/>
@@ -57,46 +57,52 @@
 </nav>
     </div>
 
-
-
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript">
+    <script src="TweenMax.js"></script>
+    <script>
         const bg = document.getElementById('bg');
         const sun = document.getElementById('sun');
         const btnPlay = document.getElementById('btnPlay');
         const btnPause = document.getElementById('btnPause');
         const btnReset = document.getElementById('btnReset');
 
-/*         bg.addEventListener('mouseover', changeColor);
-
-        function changeColor() {
-          TweenMax.to('#bg', 1, {colorProps:{borderColor:"red", myCustomProp:"rgb(204,51,0)"}, ease:Linear.easeNone})
-          TweenMax.to('#sun', 6, {y: 200, scale: .5, fill: '#fff3a3'})
-          TweenMax.to('#cloudA', 6, {x: 20})
-          TweenMax.to('#cloudB', 6, {x: 10})
-          TweenMax.to('#cloudC', 6, {x: -20})
-          TweenMax.to('#cloudD', 6, {x: -10})
-        } */
-/* 
-        btnPlay.addEventListener('click', play);
-
-        function play() {
-          (".sun").css("animation-play-state", "running");
-        } */
-
-
-
         $(document).ready(function(){
         $(".btn-play").click(function(){
-            $(".sun").css("animation-play-state", "running");
+          $(".sun").css("animation-play-state", "running");
+          TweenMax.to('#cloudA', 6, {x: 20});
+          TweenMax.to('#cloudB', 6, {x: 10});
+          TweenMax.to('#cloudC', 6, {x: -20});
+          TweenMax.to('#cloudD', 6, {x: -10});
         });
         $(".btn-pause").click(function(){
             $(".sun").css("animation-play-state", "paused");
         });
     });
+
+    btnPlay.addEventListener('click', bgColor);
+
+    function bgColor() {
+      console.log('hello');
+      bg.setAttribute("style", "background-image: linear-gradient(to right, #e6e6e6, #e6e6e6 50%, #E74C3C 50%)");
+    }
+
+
+    element = document.getElementById("btnReset");
+
+    element.addEventListener("click", function(e) {
+      console.log('hi');
+      e.preventDefault;
+      
+      sun.classList.remove("sun");
+      
+      void element.offsetWidth;
+      
+      sun.classList.add("sun");
+    }, false);
+
     </script>
 
-<script src="TweenMax.js"></script>
+
 </body>
 
 </html>
