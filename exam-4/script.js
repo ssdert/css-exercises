@@ -1,0 +1,36 @@
+var elements = document.getElementsByClassName("column");
+    
+var i;
+
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+var btnAbout = document.getElementById('btnMenu');
+var btnBack = document.getElementById('btnBack');
+var sectionMenu = document.getElementById('sectionMenu');
+
+btnMenu.addEventListener('click', toggleAboutMenu);
+btnBack.addEventListener('click', toggleAboutMenu);
+
+function toggleAboutMenu() {
+  sectionMenu.classList.toggle('visible');
+}
